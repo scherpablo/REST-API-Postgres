@@ -1,0 +1,28 @@
+{
+  "name": "restapipostgres",
+  "version": "1.0.0",
+  "description": "REST API con NodeJS, Express, Sequelize(usando postgres)",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "keywords": [
+    "NodeJS",
+    "Express",
+    "Sequelize(postgres)"
+  ],
+  "type": "module",
+  "author": "Pablo Scherpa",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "pg": "^8.10.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.31.1"
+  }
+}
