@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 8080;
 //Comprobamos la conexion a la base de datos
 async function main() {
     try {
-        await sequelize.sync({ force: false });       
+        await sequelize.sync({ force: true });       
         //Escuhcmos el puerto
         app.listen(PORT, () => {
             console.log(`Servidor corriendo en el puerto ${PORT}`);

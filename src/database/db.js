@@ -8,11 +8,11 @@ dotenv.config();
 
 //Creamos un objeto de conexión a la base de datos
 export const sequelize = new Sequelize(
-    "estudioScherpa",
-    "postgres",
-    "postgresdb",
-    {
-        host: "localhost",
-        dialect: "postgres",
+        process.env.PGDATABASE || "estudioScherpa",
+        process.env.PGUSER || "postgres",
+        process.env.PGPASSWORD ||"postgresdb", {
+        host: process.env.PGHOST || "localhost",
+        port: process.env.PGPORT || '5432',
+        dialect: "postgres"
     }
 );
